@@ -1,0 +1,41 @@
+.top_inner_block_wrapper.maxwidth-theme section.page-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 568px) {
+  .product-mini-info__raiting.EXTENDED {
+      display: flex;
+      align-items: center;
+  }
+
+  .product-mini-info__raiting .ratings {
+    margin-left: 5px;
+  }
+}
+
+@media (max-width: 750px) {
+  .product-mini-info__raiting {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    margin-top: -4px;
+  }
+}
+
+.product-mini-info__raiting .ratings {
+  order: 2;
+}
+
+.page-top .maxwidth-theme #navigation {
+  width: 60%;
+}
+
+.EXTENDED .ratings .item-rating.large {
+  width: 15px;
+  height: 18px;
+}
+
+.EXTENDED .ratings .item-rating.large.filled {
+  background-position: -375px -49px;
+}

@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Статья 1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- style / -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*Баннер общие ститли*/
+
+        .article-content-list{position:relative;width:100%}.article-content-list__heading{display:flex;justify-content:space-between;align-items:flex-start;font-weight:700;font-size:14px;line-height:27px;color:#1A2333;cursor:pointer;padding-bottom:15px;padding-top:15px;text-decoration:none;position:relative}.article-content-list__heading:before{content:'';background-color:rgba(0,0,0,0);height:100%;width:4px;left:-17px;display:block;position:absolute;top:0;bottom:0;transition:background-color .2s}.article-content-list__heading.open{color:#003595}.article-content-list__heading.open:before{background-color:#003595}@media (min-width: 1440px){.article-content-list__heading:before{left:-20px}}.article-content-list__heading-inner{padding-right:12px}.article-content-list__heading-icon{transform:scale(1, -1);transition:color, transform .2s}.article-content-list__list{padding:0;transition:padding .35s}.article-content-list__el{padding-bottom:10px}.article-content-list__el:not(:first-child){padding-top:10px;box-shadow:inset 0 1px #e5e5e5}.article-content-list__el.open .article-content-list__heading{cursor:default;color:#003595}.article-content-list__el.open .article-content-list__heading-icon{transform:scale(1, 1)}.article-content-list__el.open .article-content-list__list{padding:10px 0 15px}.article-content-list__el.open .article-content-list__list-item{padding-top:10px;opacity:1}.article-content-list__el.open .article-content-list__list-item:not(:last-child){padding:10px 0;box-shadow:inset 0px -1px #e5e5e5}.article-content-list__el.open .article-content-list__list-item:first-child{padding:0 0 10px 0}.article-content-list__el.open .article-content-list__list-item a{font-size:12px;line-height:17px}.article-content-list__list-item{opacity:0;font-size:0;line-height:0;transition:opacity .35s, font-size .35s, line-height .35s, padding .35s}.article-content-list__list-item:not(:last-child){border-bottom:none;padding:0}.article-content-list__list-item:first-child{padding:0}.article-content-list__list-item a{font-weight:400;font-size:0;line-height:0;color:#5e6570;text-decoration:none;display:inline-block;position:relative}.article-content-list__list-item a:before{content:'';background-color:rgba(0,0,0,0);height:100%;width:4px;left:-17px;display:block;position:absolute;top:0;bottom:0;transition:background-color .2s}.article-content-list__list-item a.open{color:#003595}.article-content-list__list-item a.open:before{background-color:#003595}@media (min-width: 1440px){.article-content-list__list-item a:before{left:-20px}}.article-top-main-banner.article-top-main-banner--digest{position:relative;background-color:#C4C4C4;height:400px;border-bottom-left-radius:100px;overflow:hidden}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--digest{height:420px;border-bottom-left-radius:120px}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--digest{height:550px;border-bottom-left-radius:160px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--digest{border-bottom-left-radius:180px;height:720px}}.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__bg{position:absolute;top:0;right:0;bottom:0;left:0;border-bottom-left-radius:100px;overflow:hidden}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__bg{border-bottom-left-radius:120px}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__bg{border-bottom-left-radius:160px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__bg{border-bottom-left-radius:180px}}.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__bg img{width:100%;height:100%;object-fit:cover;object-position:top}.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__date{font-weight:400;font-size:13px;line-height:17px;color:#fff;opacity:.7;padding-bottom:30px;margin-bottom:auto}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__date{font-size:18.2px;line-height:23.8px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__date{font-size:19px;line-height:28px}}@media (min-width: 1440px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__date{position:absolute;left:0;top:59px;margin:0}}.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__m-heading{display:flex;flex-direction:column;font-weight:700;font-size:30px;line-height:34px;color:#fff;text-transform:uppercase;margin:0 0 16px 0;text-align:right}.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__m-heading span:nth-child(1){text-align:left}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__m-heading{font-size:42px;line-height:47.6px}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__m-heading{font-size:75px;line-height:85px;margin:0 0 28px 0}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__m-heading{font-size:135px;line-height:147px;margin-bottom:36px}}.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__s-heading{display:flex;flex-direction:column;font-weight:700;font-size:20px;line-height:1;color:#fff;text-transform:uppercase;text-align:right;margin:0}.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__s-heading span:nth-child(2){text-align:left}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__s-heading{font-size:28px}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__s-heading{font-size:50px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__s-heading{font-size:90px}}.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__button{font-weight:700;font-size:12px;line-height:13px;cursor:pointer;text-align:center;padding:10px 14px;white-space:nowrap;border:0;outline:0;text-decoration:none;display:inline-block;border-radius:8px;transition:box-shadow .3s,color .3s,background-color .3s;background-color:#003595;color:#fff;margin:0 0 16px 0}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__button{font-size:16.8px;line-height:18.2px;padding:14px 19.6px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__button{font-size:26px;line-height:38px;padding:15px 46px;border-radius:17px}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__button{margin:0 0 28px 0}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__button{margin-bottom:76px}}.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__inner{display:flex;flex-direction:column;height:100%;align-items:flex-end;justify-content:flex-end;padding:8px 0 16px;position:relative}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__inner{padding:24px 0}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--digest .article-top-main-banner__inner{padding:36px 0 36px 150px;justify-content:center}}.article-top-main-banner.article-top-main-banner--base-article{background-color:#003595;display:flex;flex-direction:column;height:400px;border-bottom-left-radius:100px;overflow:hidden;height:582px}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--base-article{height:420px;border-bottom-left-radius:120px}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--base-article{height:550px;border-bottom-left-radius:160px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--base-article{border-bottom-left-radius:180px;height:720px}}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--base-article{height:710px}}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--base-article{height:420px;position:relative}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--base-article{height:550px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--base-article{height:720px}}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__inner{padding-top:30px}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__inner{width:55%;padding-bottom:78px;padding-right:32px;display:flex;flex-direction:column}}@media (min-width: 1440px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__inner{padding-left:68px}}@media (min-width: 1720px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__inner{max-width:100%;padding-left:50px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__inner{padding-right:48px;padding-left:90px;width:65%}}@media (min-width: 1720px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__inner{padding-left:48px}}@media (min-width: 1920px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__inner{position:relative;padding-top:122px;height:100%}}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__wrapper{padding-bottom:22px}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__wrapper{padding-bottom:0}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__wrapper{display:flex;align-items:center;justify-content:space-between;padding-top:38px;border-top:2px solid #335daa;margin-top:38px}}@media (min-width: 1920px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__wrapper{margin-top:0}}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__date{font-weight:400;font-size:13px;line-height:17px;color:#fff;opacity:.7;padding-bottom:30px;color:#b3c2ef;opacity:1}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__date{font-size:18.2px;line-height:23.8px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__date{font-size:19px;line-height:28px}}@media (min-width: 1440px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__date{padding-left:4px}}@media (min-width: 1920px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__date{position:absolute;transform:translateX(-100%);padding:0;top:134px;left:0}}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__desc{font-weight:600;font-size:14px;line-height:18px;color:#fff;margin:0;padding-bottom:22px}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__desc{font-size:16.8px;line-height:21.6px}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__desc{padding-right:22px;padding-bottom:0}}@media (min-width: 1440px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__desc{font-size:23px;line-height:34px}}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__heading{display:flex;flex-direction:column;font-weight:700;font-size:26px;line-height:28px;color:#fff;text-transform:uppercase;text-align:left;margin:0;padding-bottom:12px}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__heading{font-size:36.4px;line-height:39.2px}}@media (min-width: 1440px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__heading{font-size:65px;line-height:70px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__heading{font-size:82px;line-height:91px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__heading{font-size:94px;line-height:101px;padding-bottom:38px;margin-bottom:auto}}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__container{display:flex;height:100%}}@media (min-width: 1920px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__container{align-items:flex-start}}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__image-mob{margin-top:auto}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__image-mob picture{width:100%;max-width:100%}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__image-mob img{display:block;width:100%;height:280px;object-fit:cover}@media (min-width: 568px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__image-mob img{height:340px}}@media (min-width: 568px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__image-mob img{height:380px}}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__image-mob{display:none}}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__image-desc{display:none}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__image-desc img{max-width:100%;height:100%;width:100%;object-fit:cover}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__image-desc{position:absolute;right:0;height:100%;width:45%;display:block !important}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__image-desc{width:35%}}.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__button{font-weight:700;font-size:12px;line-height:13px;cursor:pointer;text-align:center;padding:10px 14px;white-space:nowrap;border:0;outline:0;text-decoration:none;display:inline-block;border-radius:8px;transition:box-shadow .3s,color .3s,background-color .3s;background-color:#003595;color:#fff;background-color:#fff;color:#003595;margin:0 0 16px 0}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__button{font-size:16.8px;line-height:18.2px;padding:14px 19.6px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__button{font-size:26px;line-height:38px;padding:15px 46px;border-radius:17px}}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--base-article .article-top-main-banner__button{margin-bottom:0}}.article-top-main-banner.article-top-main-banner--product{background-color:#003595;display:flex;flex-direction:column;height:400px;border-bottom-left-radius:100px;overflow:hidden;height:582px}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--product{height:420px;border-bottom-left-radius:120px}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--product{height:550px;border-bottom-left-radius:160px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--product{border-bottom-left-radius:180px;height:720px}}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--product{height:710px}}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--product{height:420px;position:relative}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--product{height:550px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--product{height:720px}}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner{padding-top:30px}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner{width:55%;padding-bottom:78px;padding-right:32px;display:flex;flex-direction:column}}@media (min-width: 1440px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner{padding-left:68px}}@media (min-width: 1720px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner{max-width:100%;padding-left:50px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner{padding-right:48px;padding-left:90px;width:65%}}@media (min-width: 1720px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner{padding-left:48px}}@media (min-width: 1920px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner{position:relative;padding-top:122px;height:100%}}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__wrapper{padding-bottom:22px}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__wrapper{padding-bottom:0}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__wrapper{display:flex;align-items:center;justify-content:space-between;padding-top:38px;border-top:2px solid #335daa;margin-top:38px}}@media (min-width: 1920px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__wrapper{margin-top:0}}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__date{font-weight:400;font-size:13px;line-height:17px;color:#fff;opacity:.7;padding-bottom:30px;color:#b3c2ef;opacity:1}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__date{font-size:18.2px;line-height:23.8px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__date{font-size:19px;line-height:28px}}@media (min-width: 1440px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__date{padding-left:4px}}@media (min-width: 1920px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__date{position:absolute;transform:translateX(-100%);padding:0;top:134px;left:0}}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__desc{font-weight:600;font-size:14px;line-height:18px;color:#fff;margin:0;padding-bottom:22px}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__desc{font-size:16.8px;line-height:21.6px}}@media (min-width: 1200px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__desc{padding-right:22px;padding-bottom:0}}@media (min-width: 1440px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__desc{font-size:23px;line-height:34px}}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__heading{display:flex;flex-direction:column;font-weight:700;font-size:26px;line-height:28px;color:#fff;text-transform:uppercase;text-align:left;margin:0;padding-bottom:12px}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__heading{font-size:31.2px;line-height:33.6px}}@media (min-width: 1440px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__heading{font-size:39px;line-height:42px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__heading{font-size:54px;line-height:65px;padding-bottom:38px;margin-bottom:auto}}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__container{display:flex;height:100%}}@media (min-width: 1920px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__container{align-items:flex-start}}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-mob{margin-top:auto;padding-bottom:24px}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-mob{padding-bottom:40px}}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-mob picture{width:100%;max-width:100%}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-mob img{display:block;width:100%;height:200px;object-fit:contain}@media (min-width: 375px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-mob img{height:50vw;max-height:260px}}@media (min-width: 568px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-mob img{height:260px;max-height:none}}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-mob img{height:360px}}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-mob{display:none}}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-desc{display:none}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-desc img{max-width:100%;height:100%;width:100%;object-fit:contain}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-desc{position:relative;right:0;height:100%;width:45%;display:block !important;padding:40px 0}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-desc{width:35%;padding:0}}@media (min-width: 1920px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__image-desc{right:-102px}}.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__button{font-weight:700;font-size:12px;line-height:13px;cursor:pointer;text-align:center;padding:10px 14px;white-space:nowrap;border:0;outline:0;text-decoration:none;display:inline-block;border-radius:8px;transition:box-shadow .3s,color .3s,background-color .3s;background-color:#003595;color:#fff;background-color:#fff;color:#003595;margin:0}@media (min-width: 768px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__button{font-size:16.8px;line-height:18.2px;padding:14px 19.6px}}@media (min-width: 1620px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__button{font-size:26px;line-height:38px;padding:15px 46px;border-radius:17px}}@media (min-width: 1024px){.article-top-main-banner.article-top-main-banner--product .article-top-main-banner__button{margin-bottom:0}}.hidden-id-detail-material{display:none}.page-detail-material .auth-holder__backdrop{cursor:default}.page-detail-material .auth-holder__close{display:none}.container>.breadcrumb--detail-material-sticky-banner.breadcrumb{max-width:100%;padding-left:0;padding-right:0}@media (min-width: 1720px){.container>.breadcrumb--detail-material-sticky-banner.breadcrumb{max-width:100%;margin-right:-50px}}.detail-material{max-width:1170px;padding:30px 0 60px;margin:0 auto}@media (min-width: 768px){.detail-material{padding:30px 0 110px}}.detail-material.is-sticky-banner{max-width:100%}@media (min-width: 1720px){.detail-material.is-sticky-banner{max-width:100%;margin-right:-50px}}.detail-material__row{display:flex;flex-wrap:wrap;margin-right:-25px;margin-left:-25px}@media (min-width: 1200px){.detail-material__row{margin-right:-15px;margin-left:-15px}}@media (min-width: 1440px){.detail-material__row{margin-right:-25px;margin-left:-25px}}.detail-material__col-content,.detail-material__col-sidebar{position:relative;width:100%;padding-right:25px;padding-left:25px}@media (min-width: 1200px){.detail-material__col-content,.detail-material__col-sidebar{padding-right:15px;padding-left:15px}}@media (min-width: 1440px){.detail-material__col-content,.detail-material__col-sidebar{padding-right:25px;padding-left:25px}}.detail-material__col-content{flex:0 0 100%;max-width:100%}@media (min-width: 1200px){.detail-material__col-content--sticky-banner{flex:0 0 calc(100% - 300px);max-width:calc(100% - 300px)}}@media (min-width: 1440px){.detail-material__col-content--sticky-banner{flex:0 0 calc(100% - 355px);max-width:calc(100% - 355px)}}@media (min-width: 1620px){.detail-material__col-content--sticky-banner{flex:0 0 calc(100% - 410px);max-width:calc(100% - 410px)}}.detail-material__col-sidebar{display:none}@media (min-width: 1200px){.detail-material__col-sidebar{display:block;flex:0 0 300px;max-width:300px}}@media (min-width: 1440px){.detail-material__col-sidebar{flex:0 0 355px;max-width:355px}}@media (min-width: 1620px){.detail-material__col-sidebar{flex:0 0 410px;max-width:410px}}.detail-material__col-sidebar.is-hidden{display:none}.detail-material__sticky-banner{position:relative;width:100%}.detail-material__sticky-banner-panel img{display:block;max-width:100%;width:100% !important;height:auto !important;border:0 !important}.detail-material__sticky-banner-panel .article-content-list{margin-bottom:60px}.detail-material__title{color:#003595;margin-top:0;margin-bottom:50px;font-weight:800;font-size:22px;line-height:32px}@media (min-width: 768px){.detail-material__title{margin-bottom:40px;font-size:32px;line-height:40px}}@media (min-width: 1024px) and (max-width: 1299px){.detail-material__title{font-size:28px;line-height:32px}}@media (min-width: 1300px) and (max-width: 1919px){.detail-material__title{font-size:30px;line-height:36px}}@media (min-width: 1920px){.detail-material__title{font-size:40px;line-height:48px}}@media (min-width: 1300px){.detail-material__title--improving-surgery{font-size:36px;line-height:42px}}.detail-material__top{margin-bottom:40px}@media (min-width: 768px){.detail-material__top{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:flex-start;align-content:flex-start;align-items:center}}@media (min-width: 768px){.detail-material__top--content{margin-bottom:70px}}.detail-material__top--additional{align-items:stretch}@media (min-width: 768px){.detail-material__top--additional{margin-bottom:70px}}.detail-material__img{display:block;height:180px;margin:0 -20px;background-repeat:no-repeat;background-position:50% 50%;background-size:cover;background-color:#c5c5c5}@media (min-width: 568px){.detail-material__img{height:240px}}@media (min-width: 768px){.detail-material__img{width:350px;height:200px;margin:0}}@media (min-width: 1024px){.detail-material__img{width:480px;height:283px}}@media (min-width: 1200px){.detail-material__col-content--sticky-banner .detail-material__img{width:350px;height:200px}}@media (min-width: 1440px){.detail-material__col-content--sticky-banner .detail-material__img{width:480px;height:283px}}.detail-material__info{display:block;margin-top:20px}@media (min-width: 768px){.detail-material__info{display:flex;flex-direction:column;flex-wrap:wrap;justify-content:space-between;align-content:flex-start;align-items:flex-start;margin-top:0}}@media (min-width: 768px){.detail-material__img+.detail-material__info{width:calc(100% - 350px);padding-left:40px}}@media (min-width: 1024px){.detail-material__img+.detail-material__info{width:calc(100% - 480px);padding-right:60px}}@media (min-width: 1200px){.detail-material__col-content--sticky-banner .detail-material__img+.detail-material__info{width:calc(100% - 350px);padding-right:20px}}@media (min-width: 1440px){.detail-material__col-content--sticky-banner .detail-material__img+.detail-material__info{width:calc(100% - 480px);padding-right:60px}}.detail-material__date{font-weight:bold;font-size:22px;line-height:30px;color:#B3B3B3}.detail-material__date+.detail-articles-status{margin-top:20px}.detail-material__preview{margin-top:20px;font-size:16px;line-height:24px;color:#0F1828}.detail-material__rating{margin-top:14px;font-size:16px;line-height:24px;color:#0F1828}.detail-material .additional-detail-material{width:100%}@media (min-width: 768px){.detail-material .additional-detail-material{max-width:560px}}@media (min-width: 1200px){.detail-material .additional-detail-material{max-width:660px}}.detail-material .additional-detail-material__test{width:100%;border:2px solid #003595;cursor:pointer;text-align:center;padding-left:10px;padding-right:10px;white-space:nowrap}.detail-material .additional-detail-material .pronews-audio{position:relative;width:100%;margin:20px 0 0}.detail-material .additional-detail-material .pronews-audio__link{width:100%;justify-content:center;text-align:center;border:2px solid #003595;background-color:transparent;color:#003595;padding-left:10px;padding-right:10px;white-space:nowrap}.detail-material .additional-detail-material .pronews-audio__content{margin-top:10px;margin-bottom:20px}@media (min-width: 768px){.detail-material .additional-detail-material .pronews-audio__content{position:absolute;left:0;top:calc(100% + 10px);margin-top:0}}.detail-material__additional{display:none;width:100%;margin-top:30px}@media (min-width: 1200px){.detail-material__additional .additional-detail-material{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:flex-start;align-content:flex-start;align-items:flex-start}}@media (min-width: 1200px){.detail-material__additional .additional-detail-material__test{width:50%;margin-right:30px}}@media (min-width: 1200px){.detail-material__additional .additional-detail-material .pronews-audio{width:50%;margin-top:0;margin-right:30px}}.active-material .detail-material__additional{display:block}.detail-material__bottom{display:none;width:100%;margin-top:40px}@media (min-width: 768px){.detail-material__bottom{padding-top:40px;border-top:1px solid #C4C4C4}}.active-material .detail-material__bottom{display:flex;flex-direction:column}@media (min-width: 1024px){.active-material .detail-material__bottom{flex-direction:row}}@media (min-width: 768px){.detail-material__bottom .additional-detail-material{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:flex-start;align-content:flex-start;align-items:flex-start}}@media (min-width: 768px){.detail-material__bottom .additional-detail-material__test{width:50%;margin-right:30px}}@media (min-width: 768px){.detail-material__bottom .additional-detail-material .pronews-audio{width:50%;margin-top:0;margin-right:30px}}.detail-material__link-library{display:none;width:100%;margin-top:40px}@media (min-width: 768px){.detail-material__link-library{padding-top:40px;border-top:1px solid #C4C4C4}}.active-material .detail-material__link-library{display:block}.detail-material__link-library-title{font-weight:800;font-size:22px;line-height:32px;margin:0 0 20px;color:#003595}@media (min-width: 768px){.detail-material__link-library-title{font-size:32px;line-height:40px}}@media (min-width: 1200px){.detail-material__link-library-title{font-size:40px;line-height:48px}}@media (min-width: 768px){.detail-material__link-library-title{margin-bottom:30px}}@media (min-width: 1200px){.detail-material__link-library-title{margin-bottom:40px}}.detail-material__link-library .pronews-inner__list-references{margin:0;padding:0}.detail-material__content{display:none}.active-material .detail-material__content{display:block}.detail-material__video{width:100%;height:260px;position:relative}@media (min-width: 667px){.detail-material__video{height:348px}}@media (min-width: 768px){.detail-material__video{height:388px}}@media (min-width: 1024px){.detail-material__video{height:545px}}@media (min-width: 1200px){.detail-material__video{height:648px}}.detail-material__video-cover{width:100%;height:100%;position:relative}.active-material .detail-material__video-cover{cursor:pointer}.detail-material__video-cover:not(.detail-material__video-cover--custom):before{content:"";display:block;position:absolute;z-index:1;left:0;top:0;width:100%;height:100%;background-image:url("/local/templates/alcon/images/section-specialists/video-cards/bg-videos_big.png");background-repeat:no-repeat;background-position:50% 25%;background-size:auto 125%}@media (min-width: 667px){.detail-material__video-cover:not(.detail-material__video-cover--custom):before{background-size:cover}}.detail-material__video-cover-title{display:flex;align-items:center;position:absolute;z-index:2;left:0;bottom:0;width:100%;padding:8px 10px;min-height:55px;font-size:12px;line-height:14px;background:rgba(0,16,46,0.8);color:#ffffff}@media (min-width: 375px){.detail-material__video-cover-title{padding:8px 20px}}@media (min-width: 667px){.detail-material__video-cover-title{padding:7px 32px;min-height:62px;font-size:13px;line-height:15px}}@media (min-width: 768px){.detail-material__video-cover-title{padding:8px 38px;min-height:70px;font-size:14px;line-height:16px}}@media (min-width: 1024px){.detail-material__video-cover-title{padding:12px 53px;min-height:96px;font-size:20px;line-height:24px}}@media (min-width: 1200px){.detail-material__video-cover-title{padding:12px 68px;min-height:120px;font-size:24px;line-height:28px}}.detail-material__video-cover-play{display:none;background:none;border:none;outline:none;padding:0;position:absolute;z-index:1;top:50%;left:50%;font-size:36px;transform:translate(-50%, -50%)}@media (min-width: 667px){.detail-material__video-cover-play{font-size:80px;line-height:80px;margin-top:-20px}}@media (min-width: 768px){.detail-material__video-cover-play{font-size:92px !important;line-height:92px !important}}@media (min-width: 1024px) and (max-width: 1199px){.detail-material__video-cover-play{font-size:130px !important;line-height:130px !important;margin-top:-25px}}@media (min-width: 1200px){.detail-material__video-cover-play{font-size:150px !important;line-height:150px !important;margin-top:-30px}}.active-material .detail-material__video-cover-play{display:block}.detail-material__video-cover .detail-material__specialists{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-content:flex-start;position:absolute;z-index:1;left:50%;top:74px;width:100%;max-width:370px;padding:0 10px;transform:translateX(-50%)}@media (min-width: 375px){.detail-material__video-cover .detail-material__specialists{padding:0 20px;flex-wrap:wrap}}@media (min-width: 667px){.detail-material__video-cover .detail-material__specialists{top:100px;max-width:565px}}@media (min-width: 768px){.detail-material__video-cover .detail-material__specialists{top:112px;max-width:645px;padding:0 30px}}@media (min-width: 1024px){.detail-material__video-cover .detail-material__specialists{top:156px;max-width:870px}}@media (min-width: 1200px){.detail-material__video-cover .detail-material__specialists{top:185px;max-width:1024px}}.detail-material__video-cover .detail-material__specialists .item__img{display:block;overflow:hidden;width:80px;height:80px;margin-bottom:4px;background-repeat:no-repeat;background-position:50%;background-size:cover;border:2px solid #94ABB2;border-radius:50%}@media (min-width: 667px){.detail-material__video-cover .detail-material__specialists .item__img{width:130px;height:130px}}@media (min-width: 768px){.detail-material__video-cover .detail-material__specialists .item__img{width:144px;height:144px;margin-bottom:4px;border-width:3px}}@media (min-width: 1024px){.detail-material__video-cover .detail-material__specialists .item__img{width:200px;height:200px;margin-bottom:10px}}@media (min-width: 1200px){.detail-material__video-cover .detail-material__specialists .item__img{width:236px;height:236px;margin-bottom:10px;border-width:4px}}.detail-material__video-cover .detail-material__specialists .item__surname{font-size:12px;line-height:14px;font-weight:bold;text-transform:uppercase;color:#ffffff}@media (min-width: 667px){.detail-material__video-cover .detail-material__specialists .item__surname{font-size:14px;line-height:16px}}@media (min-width: 768px){.detail-material__video-cover .detail-material__specialists .item__surname{font-size:16px;line-height:20px}}@media (min-width: 1024px){.detail-material__video-cover .detail-material__specialists .item__surname{font-size:23px;line-height:26px}}@media (min-width: 1200px){.detail-material__video-cover .detail-material__specialists .item__surname{font-size:26px;line-height:30px}}.detail-material__video-cover .detail-material__specialists .item__name{font-size:12px;line-height:15px}@media (min-width: 667px){.detail-material__video-cover .detail-material__specialists .item__name{font-size:12px;line-height:15px}}@media (min-width: 768px){.detail-material__video-cover .detail-material__specialists .item__name{font-size:14px;line-height:16px}}@media (min-width: 1024px){.detail-material__video-cover .detail-material__specialists .item__name{font-size:20px;line-height:23px}}@media (min-width: 1200px){.detail-material__video-cover .detail-material__specialists .item__name{font-size:23px;line-height:26px}}.detail-material__video-cover-poster{display:block;position:absolute;top:0;left:0;width:100%;height:65px;background-repeat:no-repeat;background-position:center;background-size:cover}@media (min-width: 667px){.detail-material__video-cover-poster{height:90px}}@media (min-width: 768px){.detail-material__video-cover-poster{height:100px}}@media (min-width: 1024px){.detail-material__video-cover-poster{height:138px}}@media (min-width: 1200px){.detail-material__video-cover-poster{height:160px}}.detail-material__video-cover-poster--custom{height:100%}.detail-material__video-holder{opacity:1;transition:opacity .2s;position:absolute;top:0;left:0}.detail-material__video-holder:not(.is-active){opacity:0;visibility:hidden;pointer-events:none;touch-action:none}.detail-material__video-holder,.detail-material__video-holder iframe{width:100%;height:100%}.detail-material__primary{margin-top:10px;font-size:12px;line-height:18px;color:#8C9199}@media (min-width: 768px){.detail-material__primary{margin-top:20px}}.detail-material__blue-content{margin-top:40px;margin-left:-20px;margin-right:-20px;padding:20px;background-color:#F1F7FE}@media (min-width: 568px){.detail-material__blue-content{margin-left:0;margin-right:0;padding:20px}}@media (min-width: 1024px){.detail-material__blue-content{margin-top:60px;padding:50px}}@media (min-width: 1200px){.detail-material__blue-content{padding:50px 100px 55px 70px}}@media (max-width: 575px){.detail-material--articles .detail-material__content .mt-5 .col-12{margin-bottom:30px}.detail-material--articles .detail-material__content .mt-5 img{width:100px}}.detail-material--articles .detail-articles-status{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-content:flex-start;align-items:center;margin-top:10px;margin-bottom:10px}.detail-material--articles .detail-articles-status__item{display:inline-block;vertical-align:middle;margin-right:20px}.detail-material--articles .detail-articles-status__item:last-child{margin-right:0}.detail-material--articles .detail-articles-status__title{font-size:16px;line-height:20px;color:#808080}.detail-material--articles .detail-articles-status__stars{font-size:16px;line-height:20px;color:#808080}.detail-material--articles .detail-articles-status__stars .svg-icon{margin-left:5px;margin-top:-4px}.detail-material--articles .detail-articles-status__stars .svg-icon svg{fill:#808080}@media (min-width: 768px){.detail-material--video .button{max-width:250px}}.detail-material--video .additional-detail-material{margin-top:40px}@media (min-width: 768px){.detail-material--video .additional-detail-material{margin-top:20px}}.detail-material--video .detail-video-status{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-content:flex-start;align-items:center;margin-bottom:40px}@media (min-width: 768px){.detail-material--video .detail-video-status{display:block;margin-bottom:20px}}.detail-material--video .detail-video-status__item{display:inline-block;vertical-align:middle;margin-right:20px}.detail-material--video .detail-video-status__item:last-child{margin-right:0}.detail-material--video .detail-video-status__title{font-size:16px;line-height:20px;color:#808080}.detail-material--video .detail-video-status__stars{font-size:16px;line-height:20px;color:#808080}.detail-material--video .detail-video-status__stars .svg-icon{margin-left:5px;margin-top:-4px}.detail-material--video .detail-video-status__stars .svg-icon svg{fill:#808080}.detail-material--video .detail-video-timecodes{margin:0 0 40px}.detail-material--video .detail-video-timecodes__title{margin:0 0 20px;font-weight:700;font-size:18px;line-height:26px;color:#8C9199}.detail-material--video .detail-video-timecodes__list{padding:0;margin:0;list-style:none}.detail-material--video .detail-video-timecodes__list:not(:last-child){margin:0 0 12px}.detail-material--video .detail-video-timecodes__item{display:block}.detail-material--video .detail-video-timecodes__time-point{padding:0;margin:0;box-shadow:none;background-color:transparent;border:0;margin:0 8px 0 0;outline:0;color:#003595}.detail-material--video .detail-video-timecodes__time-point--no-outline{outline:none}.detail-material--video .detail-material__video{margin-bottom:10px}@media (min-width: 768px){.detail-material--video .detail-material__video{margin-bottom:20px}}.detail-material--video .detail-material__title{margin-bottom:40px;font-size:18px;line-height:24px;color:#0F1828}@media (min-width: 768px){.detail-material--video .detail-material__title{font-size:24px;line-height:32px}}.detail-material ul.list-dots{list-style:disc;margin:10px 0;padding-left:15px}.detail-material ul.list-dots li{margin-bottom:5px}.detail-material ul.list-dots li::marker{color:#003595}.detail-material .person{font-size:14px;line-height:20px;color:#8C9199}@media (min-width: 768px){.detail-material .person{font-size:16px;line-height:24px}}.detail-material .person__title{margin-top:8px;font-weight:bold;color:#000000}@media (min-width: 768px){.detail-material .person__title{margin-top:15px}}.detail-material .person__img{display:block;position:relative;overflow:hidden;width:160px;margin:0 auto;border-radius:50%}@media (min-width: 768px){.detail-material .person__img{margin:0}}@media (min-width: 1024px){.detail-material .person__img{width:223px}}.detail-material .person__img:after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;border-radius:50%;border:3px solid #8C9199}.detail-material .person__img img{display:inline-block;vertical-align:top;max-width:100%;max-height:100%;height:auto}.detail-material__circle-with-text{display:inline-flex;align-items:center;justify-content:center;min-width:38px;min-height:38px;background-color:#003595;border-radius:50%;font-size:19px;line-height:1;color:#fff}@media (min-width: 1024px){.detail-material__circle-with-text{min-width:48px;min-height:48px;font-size:24px}}.detail-material__vertical-bottom{vertical-align:bottom}.detail-material__share{display:flex;margin-top:40px}@media (min-width: 1024px){.detail-material__share{margin-top:0;margin-left:auto}}.detail-material__frame{width:100%;border-radius:10px;padding:20px 30px}@media (min-width: 1024px){.detail-material__frame{padding:20px 46px}}.detail-material__frame--border-primary{border:1px solid #295ab5}.detail-material__frame--bg-primary{background-color:#003595}.detail-material__frame--bg-primary,.detail-material__frame--bg-primary *:not([class*="text-color-"]){color:#fff}.detail-material__frame--bg-primary .detail-material-list>li:before{background-color:#fff}.detail-material__frame--bg-accent{background-color:#00ADEE}.detail-material__frame--bg-accent,.detail-material__frame--bg-accent *:not([class*="text-color-"]){color:#fff}.detail-material__frame--bg-accent .detail-material-list>li:before{background-color:#fff}.detail-material__frame--image{margin-top:130px}.detail-material__frame-circle{margin:-146px 0 10px;text-align:center}.detail-material__frame-circle-image{display:inline-block;vertical-align:top;border-radius:50%;width:154px;height:154px;overflow:hidden;background-color:#fff}@media (min-width: 1024px){.detail-material__frame-circle-image{width:176px;height:176px}}.detail-material__frame-circle--border-primary .detail-material__frame-circle-image{border:3px solid #003595}.detail-material__frame-circle--border-accent .detail-material__frame-circle-image{border:3px solid #00ADEE}.detail-material__frame-circle-image picture{width:100%;height:100%}.detail-material__frame-circle-image img{display:inline-block;vertical-align:top;width:100%;height:100%;object-fit:cover;object-position:center}.detail-material__frame-circle-text{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;width:186px;height:186px;overflow:hidden;text-align:center;background-color:#fff;padding:10px}@media (min-width: 768px){.detail-material__frame-circle-text{width:206px;height:206px}}@media (min-width: 1024px){.detail-material__frame-circle-text{width:246px;height:246px}}.detail-material__frame-circle--border-primary .detail-material__frame-circle-text{border:3px solid #003595}.detail-material__frame-circle--border-accent .detail-material__frame-circle-text{border:3px solid #00ADEE}.detail-material__frame-circle-text [class*="text-color-"] *{color:inherit}.detail-material__banner{width:calc(100% + 40px);margin:0 -20px}@media (min-width: 768px){.detail-material__banner{width:100%;margin:0}}.detail-material__banner a,.detail-material__banner>picture,.detail-material__banner>img{display:block;margin:40px 0}@media (min-width: 768px){.detail-material__banner a,.detail-material__banner>picture,.detail-material__banner>img{margin:60px 0}}@media (min-width: 1200px){.detail-material__banner a,.detail-material__banner>picture,.detail-material__banner>img{margin:77px 0}}.detail-material__banner img{display:block;max-width:100%;width:100% !important;height:auto !important;border:0 !important}@media (min-width: 1200px){.detail-material--redesign{padding:90px 0 110px}}.detail-training{display:flex;flex-direction:column}@media (min-width: 1200px){.detail-training:not(.detail-training--wide){display:grid;grid-template-columns:1fr 1fr 1fr 359px;grid-template-rows:minmax(max-content, max-content) auto;gap:0 60px;grid-template-areas:'header header header sidebar' 'content content content sidebar'}}.detail-training__header{margin:0 0 30px}@media (min-width: 1200px){.detail-training__header{grid-area:header;margin:0 0 40px}}.detail-training__title{margin:0 0 7px}@media (min-width: 768px){.detail-training__title{margin:0 0 10px}}@media (min-width: 1200px){.detail-training__title{margin:0 0 20px}}.detail-training-subheader{flex-direction:row;flex-wrap:wrap;justify-content:flex-start;align-content:flex-start;align-items:center;display:none}.active-material .detail-training-subheader{display:flex}.detail-training-subheader__item{display:inline-flex;align-items:center;margin:0 16px 0 0}@media (min-width: 768px){.detail-training-subheader__item{margin:0 20px 0 0}}.detail-training-subheader__item--title{font-weight:700;font-size:12px;line-height:20px;flex-basis:100%;margin:0 0 8px 0}@media (min-width: 768px){.detail-training-subheader__item--title{flex-basis:auto;font-size:16px;line-height:24px;margin:0 42px 0 0}}@media (min-width: 1200px){.detail-training-subheader__item--title{font-size:18px;margin:0 26px 0 0}}.detail-training-subheader__item--status{font-size:16px;line-height:20px;color:#808080}.detail-training-subheader__item--stars{font-size:12px;line-height:18px;color:#003595}@media (min-width: 768px){.detail-training-subheader__item--stars{font-size:16px;line-height:20px}}.detail-training-subheader__item--stars .svg-icon{margin-left:5px}.detail-training-subheader__item--stars .svg-icon svg{fill:#003595}.detail-training__content{display:none;order:9}.active-material .detail-training__content{display:block}@media (min-width: 1200px){.detail-training__content{order:unset;grid-area:content}}.detail-training__content h3{margin:0 0 20px;color:#000;font-weight:700;font-size:14px;line-height:24px}@media (min-width: 768px){.detail-training__content h3{margin:0 0 40px;font-size:24px;line-height:32px}}.detail-training__content p{margin:20px 0}@media (min-width: 768px){.detail-training__content p{margin:24px 0}}.detail-training__content strong{font-weight:700;color:#003595}.detail-training__content ol{padding:0;margin:0 0 30px 20px;list-style:none;counter-reset:num}.detail-training__content ol li{position:relative;margin:0;padding:0}.detail-training__content ol li:before{content:counter(num) ".";counter-increment:num;display:inline-block;position:absolute;top:0;left:-26px;width:20px;color:#000;font-weight:700;text-align:right}.detail-training__content ol li.bold{font-weight:700;color:#003595}.detail-training__content ul{padding:0;margin:0;list-style:none}.detail-training__content ul li{position:relative;padding:0 0 0 15px;margin:0}.detail-training__content ul li:not(:last-child){margin:0 0 18px}@media (min-width: 768px){.detail-training__content ul li:not(:last-child){margin:0 0 24px}}.detail-training__content ul li:before{content:'';position:absolute;left:0;top:10px;display:block;width:6px;height:6px;background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg width='6' height='6' viewBox='0 0 6 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='3' cy='3' r='3' fill='%23003595'/%3e%3c/svg%3e");background-repeat:no-repeat}.detail-training__content blockquote{display:inline-flex;margin:0;padding:11px 0 14px;border:0;border-top:1px solid #003595;border-bottom:1px solid #003595;color:#003595;font-weight:700;font-size:14px;line-height:19px}@media (min-width: 768px){.detail-training__content blockquote{font-size:16px;line-height:24px}}@media (min-width: 1200px){.detail-training__content blockquote{font-size:16px;line-height:24px}}.detail-training__subtitle{margin:0 0 20px;color:#003595;font-weight:700;font-size:16px;line-height:20px}@media (min-width: 768px){.detail-training__subtitle{margin:0 0 30px;font-size:22px;line-height:32px}}@media (min-width: 1200px){.detail-training__subtitle{margin:0 0 30px;font-size:30px;line-height:32px}}.detail-training__detail,.detail-training__objectives{margin:0 0 40px}@media (min-width: 1200px){.detail-training__detail,.detail-training__objectives{margin:0 0 60px}}.detail-training__certificate{display:block}.detail-training__certificate img{display:block;max-width:100%;height:auto;margin:0 auto}.detail-training__certificate-content{font-size:12px;line-height:18px;margin:0 0 40px}@media (min-width: 768px){.detail-training__certificate-content{font-size:16px;line-height:24px;margin:0}}@media (min-width: 1200px){.detail-training__certificate-content{font-size:24px;line-height:32px}}.detail-training-additional{display:none;width:100%;margin:30px 0 0}@media (min-width: 1200px){.detail-training-additional{margin:40px 0 0}}.active-material .detail-training-additional{display:block}@media (min-width: 768px){.detail-training-additional__item{max-width:340px}}@media (min-width: 1200px){.detail-training-additional__item{max-width:360px}}.detail-training-additional__button{border:2px solid #003595;cursor:pointer;text-align:center}.detail-training__sidebar{display:none;margin:0 0 44px}.active-material .detail-training__sidebar{display:block}@media (min-width: 768px){.detail-training__sidebar{margin:0 0 53px}}@media (min-width: 1200px){.detail-training__sidebar{grid-area:sidebar;margin:0}}.detail-training__sidebar-inner{position:relative;padding:18px 3000px 26px;margin:0 -3000px;background-color:#003595}@media (min-width: 768px){.detail-training__sidebar-inner{padding-top:12px;padding-bottom:38px}}@media (min-width: 1200px){.detail-training__sidebar-inner{padding:50px 29px;margin:0;overflow-y:hidden}}.detail-training__sidebar-title{position:relative;margin:0 0 20px;text-align:center;color:#f7f7f7;font-weight:700;font-size:21px;line-height:29px}@media (min-width: 768px){.detail-training__sidebar-title{margin:0 0 30px;text-align:left;font-size:22px;line-height:48px}}@media (min-width: 1200px){.detail-training__sidebar-title{margin:0 0 47px;text-align:center;font-size:40px;line-height:48px;z-index:2}}.detail-training-slider-nav{position:relative;display:block;width:100%}.detail-training-slider-nav--auto-height .slick-list{height:auto !important}.detail-training-slider-nav .slick-arrow{padding:0;margin:0;box-shadow:none;background-color:transparent;border:0;position:absolute;left:50%;display:inline-flex;align-items:center;justify-content:center;width:100%;height:32px;font-size:0 !important;line-height:0 !important;background-size:cover;background-repeat:no-repeat;background-position:50% 50%;text-indent:-9999px;z-index:1;outline:0;visibility:visible;transition:all .3s ease-in-out}.detail-training-slider-nav .slick-arrow--no-outline{outline:none}.detail-training-slider-nav .slick-arrow.slick-next:before,.detail-training-slider-nav .slick-arrow.slick-prev:before{content:'';position:absolute;top:50%;left:0;transform:translateY(-50%);width:100%;height:170px;background:linear-gradient(180deg, rgba(255,255,255,0) 0%, #003595 58.85%)}.detail-training-slider-nav .slick-arrow.slick-next:after,.detail-training-slider-nav .slick-arrow.slick-prev:after{content:'';position:absolute;display:block;background-size:30px 32px;width:30px;height:32px}.detail-training-slider-nav .slick-arrow.slick-next{bottom:0;transform:translate(-50%, 50%)}.detail-training-slider-nav .slick-arrow.slick-next:after{background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg width='30' height='32' viewBox='0 0 30 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.6953 0L14.5651 11.1302L3.43498 0L0 3.43487L14.5651 18L29.1303 3.43487L25.6953 0Z' fill='white'/%3e%3cpath d='M25.6953 14L14.5651 25.1302L3.43498 14L0 17.4349L14.5651 32L29.1303 17.4349L25.6953 14Z' fill='white'/%3e%3c/svg%3e")}.detail-training-slider-nav .slick-arrow.slick-prev{top:0;transform:translate(-50%, -50%) rotate(180deg)}.detail-training-slider-nav .slick-arrow.slick-prev:after{background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg width='30' height='32' viewBox='0 0 30 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M25.6953 0L14.5651 11.1302L3.43498 0L0 3.43487L14.5651 18L29.1303 3.43487L25.6953 0Z' fill='white'/%3e%3cpath d='M25.6953 14L14.5651 25.1302L3.43498 14L0 17.4349L14.5651 32L29.1303 17.4349L25.6953 14Z' fill='white'/%3e%3c/svg%3e")}.detail-training-slider-nav .slick-arrow.slick-disabled{pointer-events:none;opacity:0;visibility:hidden;cursor:default}.detail-training-slider-nav .slick-list{margin:0 -3005px 0 -5px;padding:0 3068px 0 0}@media (min-width: 768px){.detail-training-slider-nav .slick-list{margin:0 -3010px 0 -10px;padding:0 3134px 0 0}}@media (min-width: 1200px){.detail-training-slider-nav .slick-list{margin:-15px 0;padding:0}}.detail-training-slider-nav .slick-track{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:stretch}@media (min-width: 1200px){.detail-training-slider-nav .slick-track{flex-direction:column;flex-wrap:wrap}}.detail-training-slider-nav .slick-slide{display:flex;align-items:stretch;padding:0 5px;height:auto;border:0;outline:0}@media (min-width: 768px){.detail-training-slider-nav .slick-slide{padding:0 10px}}@media (min-width: 1200px){.detail-training-slider-nav .slick-slide{padding:15px 0}}.detail-training-slider-nav .slick-slide>div{position:relative;display:flex;width:100%}.detail-training-slider-nav__item{position:relative;flex-grow:1;display:block}@media (min-width: 1200px){.detail-training-slider-nav__item{width:300px;height:170px}}.detail-training-slider-nav__imageWrapper{position:relative;width:100%;padding-bottom:56.4%;cursor:pointer}@media (min-width: 1200px){.detail-training-slider-nav__imageWrapper{padding:0}}.detail-training-slider-nav__image{position:absolute;top:0;right:0;bottom:0;left:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center}@media (min-width: 1200px){.detail-training-slider-nav__image{position:relative;height:170px}}.detail-training-slider-for{position:relative;display:block;width:100%;padding:0 21px}@media (min-width: 768px){.detail-training-slider-for{padding:0 31px}}@media (min-width: 1200px){.detail-training-slider-for{padding:0 37px}}.detail-training-slider-for .slick-arrow{padding:0;margin:0;box-shadow:none;background-color:transparent;border:0;position:absolute;top:50%;display:inline-flex;width:14px;height:24px;font-size:0;line-height:0;background-size:cover;background-repeat:no-repeat;background-position:50% 50%;transform:translateY(-50%);text-indent:-9999px;z-index:9;outline:0;visibility:visible;transition:all .3s ease-in-out}.detail-training-slider-for .slick-arrow--no-outline{outline:none}@media (min-width: 768px){.detail-training-slider-for .slick-arrow{width:21px;height:36px}}@media (min-width: 1200px){.detail-training-slider-for .slick-arrow{width:25px;height:40px}}.detail-training-slider-for .slick-arrow.slick-next{right:0;background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg width='25' height='40' viewBox='0 0 25 40' xmlns='http://www.w3.org/2000/svg'%3e%3cpolyline fill='none' stroke='%23003595' stroke-width='2' points='4.002,38.547 22.527,20.024 4,1.5 '%3e%3c/polyline%3e%3c/svg%3e")}.detail-training-slider-for .slick-arrow.slick-prev{left:0;background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg width='25' height='40' viewBox='0 0 25 40' xmlns='http://www.w3.org/2000/svg'%3e%3cpolyline fill='none' stroke='%23003595' stroke-width='2' points='20.527,1.5 2,20.024 20.525,38.547 '%3e%3c/polyline%3e%3c/svg%3e")}.detail-training-slider-for .slick-arrow.slick-disabled{pointer-events:none;opacity:0;visibility:hidden;cursor:default}.detail-training-slider-for .slick-track{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:stretch}.detail-training-slider-for .slick-slide{display:flex;align-items:stretch;height:auto;padding:0;margin:0;border:0;outline:0}.detail-training-slider-for .slick-slide>div{position:relative;display:flex;width:100%}.detail-training-slider-for__item{position:relative;flex-grow:1;display:inline-flex !important}.detail-training-slider-for__image{display:block;width:100%;max-width:100%;height:165px;margin:auto;object-fit:contain;object-position:center}@media (min-width: 768px){.detail-training-slider-for__image{height:68vh}}@media (min-width: 1200px){.detail-training-slider-for__image{height:58vh}}.detail-training-popup{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1010;display:none;opacity:0;visibility:hidden;align-items:flex-start;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;padding:0;background:rgba(0,53,149,0.5);transition:.3s}.detail-training-popup.is-visible{display:flex;opacity:1;visibility:visible}.detail-training-popup__backdrop{position:absolute;top:0;left:0;width:100%;height:100%}.detail-training-popup__dialog{position:relative;margin:auto;padding:15px 10px;width:100%;max-width:calc(100% - 0.01px) !important;background:#fff;border-radius:10px}.detail-training-popup__close{padding:0;margin:0;box-shadow:none;background-color:transparent;border:0;position:absolute;bottom:calc(100% + 10px);right:5px;display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;background-repeat:no-repeat;background-position:50% 50%;background-size:contain;line-height:0;outline:0}.detail-training-popup__close--no-outline{outline:none}@media (min-width: 768px){.detail-training-popup__close{right:0;bottom:calc(100% + 20px);width:18px;height:18px}}@media (min-width: 1200px){.detail-training-popup__close{left:calc(100% + 6px);right:unset;bottom:calc(100% + 16px);width:36px;height:36px}}.detail-training-popup__close>svg{display:block;width:14px;height:14px}@media (min-width: 768px){.detail-training-popup__close>svg{width:18px;height:18px}}@media (min-width: 1200px){.detail-training-popup__close>svg{width:36px;height:36px}}.detail-training-popup__image{display:block;max-width:100%}.detail-material-table{border-collapse:collapse;border-spacing:0;width:100%;caption-side:bottom}.detail-material-table caption{margin:20px 0 0;text-align:left;color:#8C9199}.detail-material-table thead{vertical-align:bottom}.detail-material-table thead tr{background-color:#003595}.detail-material-table thead tr th{padding:10px 30px;font-weight:700;color:#fff}.detail-material-table thead tr th.middle{vertical-align:middle}.detail-material-table td{padding:10px 30px;vertical-align:top}.detail-material-table td.valign-middle{vertical-align:middle}.detail-material-table>tr,.detail-material-table tbody tr{background-color:#E1F4FD}.detail-material-table>tr.colored,.detail-material-table tbody tr.colored{background-color:#B9E5FA}.detail-material-table>tr.colored-primary,.detail-material-table tbody tr.colored-primary,.detail-material-table tbody td.colored-primary{background-color:#003595;color:#fff}.detail-material-table>tr.colored-white,.detail-material-table tbody tr.colored-white{background-color:#fff}.detail-material-table--striped>tr:nth-of-type(odd),.detail-material-table--striped tbody tr:nth-of-type(odd){background-color:#B9E5FA}.detail-material-table--bordered>:not(caption)>*>*{border-width:0 1px;border-style:solid;border-color:#fff}.detail-material-table--bordered-black>:not(caption)>*>*{border-width:0 1px;border-style:solid;border-color:#1A2333}.detail-material-table--bordered-all>:not(caption)>*>*{border-width:1px}.detail-material-table--caption-top{caption-side:top}.detail-material-table--caption-top caption{margin:0 0 20px}.detail-material-table--fixed{table-layout:fixed}.detail-material-responsive{overflow-x:auto;-webkit-overflow-scrolling:touch;-ms-overflow-style:-ms-autohiding-scrollbar;padding-bottom:0.5rem}.detail-material-responsive::-webkit-scrollbar{width:4px;height:4px;transition:.3s background}.detail-material-responsive::-webkit-scrollbar-track{border-top:1px solid #fff;border-bottom:1px solid #fff;background-color:#E8E9EB;border-radius:2px}.detail-material-responsive::-webkit-scrollbar-thumb{background-color:rgba(0,53,149,0.85);border-radius:2px;cursor:pointer}.detail-material-responsive:hover::-webkit-scrollbar-thumb{background-color:#003595}.detail-material-figure{margin:0}.detail-material-figure.responsive picture{padding-bottom:20px;overflow-x:auto;-webkit-overflow-scrolling:touch}@media (min-width: 1200px){.detail-material-figure.responsive picture{padding-bottom:0;overflow-x:unset;-webkit-overflow-scrolling:unset}}.detail-material-figure.responsive img{width:auto;max-width:unset}@media (min-width: 1200px){.detail-material-figure.responsive img{max-width:100%}}.detail-material-figure picture{display:block}.detail-material-figure img{display:inline-block;vertical-align:bottom}.detail-material-figure figcaption{display:block;margin:20px 0 0;color:#8C9199}.detail-material-list{margin:0;padding:0;list-style:none}.detail-material-list>li{position:relative;padding-left:20px}.detail-material-list>li+li{margin-top:20px}.detail-material-list>li:before{content:'';position:absolute;top:8px;left:0;display:block;width:10px;height:10px;border-radius:50%;background-color:#003595}.detail-material-list>li ul{margin:20px 0 0;padding:0;list-style:none}.detail-material-list>li ul li{position:relative;padding-left:20px}.detail-material-list>li ul li+li{margin-top:20px}.detail-material-list>li ul li:before{content:'';position:absolute;top:8px;left:0;display:block;width:10px;height:10px;border-radius:50%;background-color:transparent;border:1px solid #003595}.detail-material-list--dot-accent-blue>li:before{background-color:#00ADEE}.detail-material-list--dot-t>li:before{background:#fff;border:1px solid #003595}.detail-material-nota-bene{position:relative;min-height:240px;padding:30px 30px 40px 45px;background-color:#B9E5FA}@media (min-width: 768px){.detail-material-nota-bene{padding-left:70px}}.detail-material-nota-bene:before{content:attr(data-quote);position:absolute;top:30px;left:15px;transform:rotate(-90deg) translateX(-100%);transform-origin:top left;font-weight:700;font-size:16px;line-height:18px;color:#003595}@media (min-width: 768px){.detail-material-nota-bene:before{left:20px;font-size:31px;line-height:20px}}
+
+        /*Баннер новые стили */
+        .article-top-main-banner__date_img img {
+            max-width: 228px;
+            padding-top: 47px !important;
+        }
+
+        @media (min-width: 1920px) {
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner {
+                padding-top: 47px !important;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner {
+                width: 100% !important;
+                padding-left: 168px !important;
+            }
+
+            .article-top-main-banner__heading {
+                padding-top: 66px;
+                padding-bottom: 0 !important;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__wrapper {
+                border: 0 !important;
+                margin-top: 0 !important;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__heading {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 1920px) {
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner {
+                width: 100% !important;
+                padding-left: 168px !important;
+            }
+
+            .article-top-main-banner__heading {
+                padding-top: 66px;
+                padding-bottom: 0 !important;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__wrapper {
+                border: 0 !important;
+                margin-top: 0 !important;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__heading {
+                margin-bottom: 0;
+            }
+        }
+
+        .article-top-main-banner__heading {
+            font-weight: 700;
+            font-size: 124.096px !important;
+            line-height: 135px !important;
+        }
+
+        .article-top-main-banner__after-heading {
+            font-weight: 700;
+            font-size: 45px;
+            line-height: 57px;
+            color: #ffffff;
+
+            text-transform: uppercase;
+        }
+
+
+        @media (max-width: 1620px) {
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner {
+                width: 100% !important;
+            }
+
+            .article-top-main-banner__heading {
+                font-size: 90px !important;
+                line-height: 90px !important;
+                padding-top: 20px;
+            }
+
+            .article-top-main-banner__after-heading {
+                font-size: 35px;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__wrapper {
+                border: 0 !important;
+                margin-top: 0 !important;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner {
+                padding-left: 68px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner {
+                width: 100% !important;
+            }
+
+            .article-top-main-banner__heading {
+                font-size: 65px !important;
+                line-height: 70px !important;
+                padding-top: 20px;
+            }
+
+            .article-top-main-banner__after-heading {
+                font-size: 20px;
+                line-height: 10px;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__wrapper {
+                border: 0 !important;
+                margin-top: 20px !important;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner {
+                padding-left: 68px;
+            }
+
+            .article-top-main-banner__date_img img {
+                padding-top: 20px !important;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .article-top-main-banner__inner {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .article-top-main-banner__after-heading {
+                font-size: 40px;
+                line-height: 10px;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product .article-top-main-banner__inner {
+                padding-left: 0 !important;
+                padding-top: 49px;
+            }
+
+            .article-top-main-banner__heading {
+                text-align: center !important;
+                font-size: 40px !important;
+                line-height: 48px !important;
+                width: 70%;
+                padding-top: 10px;
+            }
+
+            .article-top-main-banner__after-heading {
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 19px;
+                width: 201px;
+                text-align: center;
+                padding-top: 7px;
+            }
+
+            .article-top-main-banner.article-top-main-banner--product {
+                height: 460px;
+            }
+        }
+
+
+        /*Статья*/
+        .local-note {
+            font-size: 14px;
+            line-height: 22px;
+            color: #8c9199;
+        }
+
+        .fs12 {
+            font-size: 12px;
+        }
+
+        .fs20 {
+            font-size: 20px;
+        }
+
+        .flex-block {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media(max-width:1024px) {
+            .flex-block {
+                flex-direction:column;
+            }
+            .flex-item {
+                padding-bottom: 1.5rem;
+            }
+        }
+
+
+
+        .mb-4 {
+            margin-bottom: 2rem !important;
+        }
+
+        .pb-6 {
+            padding-bottom: 5.3rem;
+        }
+
+        .mb-6 {
+            margin-bottom: 5.3rem;
+        }
+
+    </style>
+    <!-- style // --> <!-- b1 / -->
+
+</head>
+<body translate="no">
+<!--    Баннер-->
+
+
+    <div class="article-top-main-banner article-top-main-banner--product">
+        <div class="article-top-main-banner__container container">
+            <div class="article-top-main-banner__inner">
+                <div class="article-top-main-banner__date_img">
+                    <img src="https://email-images.mindbox.ru/MoiGlaza/1105/bc4b68f5-563b-4f83-96cc-c501d37d6805.png" alt="">
+               </div>
+                <h2 class="article-top-main-banner__heading">
+                    Научный дайджест <br>
+                    май 2023 </h2>
+                <div class="article-top-main-banner__after-heading">
+                    обзор конференции ARVO2023
+                </div>
+                <div class="article-top-main-banner__wrapper">
+                    <!-- <p class="article-top-main-banner__desc">
+
+                   </p>-->
+                    <div class="article-top-main-banner__button" data-open-test-detail-material="">
+                        Пройти тест
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<br>
+
+
+
+
+
+<!--Статья-->
+<div class="pb-4 mb-3 fs12">
+    <b>Постеры представлены на ежегодной конференции Ассоциации Исследований в области Зрения и Офтальмологии, <br> Association for Research in Vision and Ophthalmology (ARVO), 23-27 аплеля 2023, Новый Орлеан, США. </b> <a href="https://www.arvo.org/annual-meeting/program/online-planner/" target="_blank" style="color: #003595;text-decoration: none;display: block">https://www.arvo.org/annual-meeting/program/online-planner/</a>
+</div>
+<h2 class="numbered-title mb-5 pb-4" data-content-parent-title="01.КОРРЕКЦИЯ ЗРЕНИЯ" style="word-break: break-word;">
+    <span>01</span> КОРРЕКЦИЯ <br>
+    ЗРЕНИЯ </h2>
+<h3 data-content-sub-title="Взаимодействие Acanthamoeba с силикон-гидрогелевыми материалами контактных линз" class="typography-h2 mt-0 text-color-primary mb-4 pb-5">
+    Взаимодействие Acanthamoeba с силикон-гидрогелевыми материалами контактных линз </h3>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Цель</b>
+</div>
+<div class="mb-4 pb-5 ">
+    Акантамебный кератит (АК) чаще всего связан с использованием контактных линз и контактом с загрязненной водой. Существующие исследования по взаимодействию Acanthamoeba с контактными линзами противоречивы и не приводят к единому выводу. Данное исследование оценило поведение Acanthamoeba при контакте с различными материалами контактных линз и преобразовало это поведение в количественные различия между типами линз.
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Методология</b>
+</div>
+<div class="pb-4 ">
+    Трофозоиты Acanthamoeba (генотипы T3, T4, T5) были инокулированы на шесть силикон-гидрогелевых контактных линз (lehfilcon A, lotrafilcon B, comfilcon A, senofilcon A, samfilcon A и fanfilcon A) и оставлены для адгезии. Для наблюдения за поведением клеток в течение 3 дней велась видеозапись с временной задержкой. Конфокальная микроскопия использовалась для анализа сфероидов, трофозоитов и цист с течением времени. Устойчивость сфероидов Acanthamoeba к дезинфекции сравнивалась с устойчивостью отдельных трофозоитов при использовании многофункциональных растворов (МФР).
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="detail-material-responsive pb-3">
+            <div style="width: 920px;">
+                <span>  <img alt="Рис.1. Изображения поверхности линз использованные для оценки количества и размера частиц (степени агрегации Acanthamoeba)" src="https://email-images.mindbox.ru/MoiGlaza/989/5cdf6409-a055-4c03-b8d3-7919f74fa22d.png" class="d-block w-100 mw-100 h-auto" loading="lazy"> </span>
+            </div>
+        </div>
+    </div>
+</div>
+<p class="local-note my-0 pt-2 mb-4 pb-5">
+    Рис.1. Изображения поверхности линз использованные для оценки количества и размера частиц (степени агрегации Acanthamoeba)
+</p>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Результаты</b>
+</div>
+<div class="pb-4 mb-3 ">
+    Исследование показало, что на поверхности многих материалов контактных линз трофозоиты склонны формировать кластеры – сфероиды: меньшее количество и больший размер частиц на поверхности линзы указывали на большую степень агрегации. Конфокальная микроскопия подтвердила наличие цист в сердцевине сфероидов. Линзы со сфероидами показали более высокую выживаемость Acanthamoeba после дезинфекции тремя наиболее распространенными биоцидами по сравнению с линзами с неагрегированными трофозоитами.
+</div>
+<div class="mb-4 pb-5 ">
+    Среди протестированных материалов линзы из материалов lehfilcon A и lotrafilcon B показали значительно меньшую агрегацию трофозоитов (меньший размер и большее количество частиц).
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Выводы</b>
+</div>
+<div class="mb-5 pb-5 ">
+    Исследование показало, что многие материалы контактных линз вызывают агрегацию Acanthamoeba с формированием сфероидов с цистами внутри. Это позволяет Acanthamoeba противостоять дезинфекции МФР и увеличивает риски осложнений при несоблюдении рекомендаций.
+</div>
+
+
+<h3 data-content-sub-title="Комфорт в очках vs комфорт в контактных линзах: о чем говорят новые пользователи" class="typography-h2 mt-0 text-color-primary mb-4 pb-5">
+    Комфорт в очках vs комфорт в контактных линзах: о чем говорят новые пользователи </h3>
+
+
+
+<div class="mb-4 pb-5 flex-block">
+    <div class="flex-item" style="max-width: 432px">
+        <div class="pb-3 mb-3">
+            <b>Цель</b>
+        </div>
+        <div>
+            Полимер Верофилкон А разработан специально для новых пользователей. Технология SMARTSURFACЕ формирует на поверхности силикон-гидрогелевой линзы слой высокогидрофильного геля, что, как ожидалось, должно улучшить комфорт и качество зрения пациентов. В данном исследовании новые пользователи сравнивают комфорт в линзах из материала верофилкон А и при ношении очков.
+        </div>
+    </div>
+    <div class="flex-item" style="max-width: 358px">
+        <div class="pb-3 mb-3">
+            <b>Методология</b>
+        </div>
+        <div>
+            В исследовании участвовали 58 новых пользователей МКЛ, которым были подобраны линзы PRECISION1 (верофилкон А). Показатели комфорта участников при ношении очков или МКЛ оценивались на исходном уровне (в очках), через 1 и 4 недели ношения МКЛ.
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="pb-3 mb-3 fs20">
+    <b>Результаты</b>
+</div>
+<div class="pb-5 ">
+    В конце 1 месяца ношения показатели качества зрения в очках (исходный уровень) и МКЛ (1-я и 4-я недели) были лучше при использовании МКЛ, чем при использовании очков (P <0,01):
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="detail-material-responsive pb-5">
+            <div style="width: 920px;">
+                <span>  <img alt="Процент участников, на 4-й неделе согласившихся с тем, что комфорт в МКЛ был так же хорош или лучше,  чем в очках, был следующим:" src="https://email-images.mindbox.ru/MoiGlaza/989/7e5f15b6-5031-4df1-9d5e-cc3a0518f904.png" class="d-block w-100 mw-100 h-auto" loading="lazy"> </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pb-3 mb-3 ">
+    Процент участников, на 4-й неделе согласившихся с тем, что комфорт в МКЛ был так же хорош или лучше, чем в очках, был следующим:
+</div>
+
+
+<ul class="detail-material-list mb-4 pb-5">
+    <li>Общее качество зрения (91,4%)</li>
+    <li>Периферическое зрение (100,0%)</li>
+    <li>Зрение в конце дня (91,4%)</li>
+    <li>Комфорт в течение дня (89,7%)</li>
+    <li>Комфорт в конце дня (82,8%)</li>
+    <li>Меньшая усталость в течение дня (87,9%)</li>
+    <li>Меньшая усталость в конце дня (89,7%)</li>
+</ul>
+
+
+<div class="pb-3 mb-3 fs20">
+    <b>Выводы</b>
+</div>
+<div class="pb-5 mb-5 ">
+    Полученные результаты свидетельствуют о том, что МКЛ из материала Верофилкон А обеспечивают новым пользователям более высокий уровень комфорта, чем очки, и эффективны в качестве первой линзы для новичков.
+</div>
+
+<h3 data-content-sub-title="Световая терапия для контроля миопии: cистематический обзор и сетевой
+мета-анализ" class="typography-h2 mt-0 text-color-primary mb-4 pb-5">
+    Световая терапия для контроля миопии: cистематический обзор и сетевой
+    мета-анализ </h3>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Цель</b>
+</div>
+<div class="mb-4 pb-5 ">
+    В ранее проведенных исследованиях изучалась эффективность светотерапии в контроле миопии, но в различных длинах волн света и размерах выборки. В данном исследовании проведен традиционный (ТМА) и байесовский сетевой мета-анализ для анализа эффектов различных длин волн света в контроле миопии.
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Методы</b>
+</div>
+<div class="mb-4 pb-5">
+    Был проведен поиск в PubMed, EMBASE и MEDLINE рандомизированных контролируемых и нерандомизированных сравнительных исследований, опубликованных на 15 ноября 2022 года. Включены исследования, в которых сравнивались красный, фиолетовый свет и свет полного спектра. Объединены оценки влияния лечения на прогрессирование сфероэквивалента (СЭ) и рост осевой длины (ОД). В обзор включено 14 исследований.
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Результаты</b>
+</div>
+<div class="pb-3 mb-3 ">
+    В группах светотерапии СЭ и ОД росли медленнее по сравнению с контрольной группой: среднее отклонение (MD) составило 0,38D и -0,19 мм соответственно (95% CI).
+</div>
+<div class="pb-3 mb-3 ">
+    <b>Осевая длина</b> росла меньше группах красного (-0,27 мм (-0,40 мм, -0,14 мм)), фиолетового света (-0,07 мм (-0,11 мм, -0,04 мм)) и света полного спектра (-0,06 мм (-0,09 мм, -0,04 мм)), чем в контрольной группе.
+</div>
+<div class="mb-4 pb-5 ">
+    Сфероэквивалент прогреccировал медленнее в группах красного (0,50D (0,17D, 0,83D)), фиолетового (0,24D (-0,10D, 0,58D)) и полного спектра (0,11D (0,05D, 0,18D)) по сравнению с контролем.
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Выводы</b>
+</div>
+<div class="pb-5 mb-5 ">
+    Светотерапия показала эффективность в уменьшении прогрессирования миопии. Красный свет показал наибольшую эффективность, за ним следовали фиолетовый свет и свет полного спектра.
+</div>
+
+<h3 data-content-sub-title="Влияние миопии родителей на прогрессирование детской миопии: данные Гонконгского исследования" class="typography-h2 mt-0 text-color-primary mb-4 pb-5">
+    Влияние миопии родителей на прогрессирование детской миопии: данные Гонконгского исследования </h3>
+
+<div class="mb-4 pb-5 flex-block">
+    <div class="flex-item" style="max-width: 432px">
+        <div class="pb-3 mb-3">
+            <b>Цель</b>
+        </div>
+        <div>
+            Миопия родителей связана с риском развития миопии у детей, однако связь остается неясной. Данное исследование оценивает влияние родительской миопии на возникновение и прогрессирование миопии у детей.
+        </div>
+    </div>
+    <div class="flex-item" style="max-width: 385px">
+        <div class="pb-3 mb-3">
+            <b>Методология</b>
+        </div>
+        <div>
+            Лонгитюдное популяционное исследование с 3-летним наблюдением и участием 3 279 человек. Циклоплегическая авторефрактометрия использовалась для обследования детей, нециклоплегическая авторефрактометрия - для родителей.
+        </div>
+    </div>
+</div>
+
+
+<div class="pb-3 mb-3 fs20">
+    <b>Результаты</b>
+</div>
+<div class="pb-3 mb-3 ">
+    Было набрано 548 мальчиков и 545 девочек в возрасте от 6 до 8 лет, сферический эквивалент (СЭ) - 0,31±1,47 D на исходном этапе. Через 3 года наблюдения кумулятивная частота миопии составила 43,4% (95% ДИ). Изменение СЭ составило -1,44±1,12 D.
+</div>
+
+<ul class="detail-material-list mb-4 pb-5">
+    <li>У детей с немиопичными родителями кумулятивная частота миопии и изменение СЭ составили 23,7% и -0,97±0,73 D</li>
+    <li>При миопии слабой степени у родителей 42,3% и -1,35±1,01 D соответственно</li>
+    <li>При высокой миопии у обоих родителей 68,8% и -2,25±1,42 D соответственно</li>
+</ul>
+
+
+<div class="pb-3 mb-3 fs20">
+    <b>Выводы</b>
+</div>
+<div class="pb-5 mb-5 ">
+    Риск возникновения детской близорукости увеличивался в 5,18 раз, а прогрессирование близорукости удваивалось в течение 3 лет, если оба родителя имели высокую степень близорукости.
+</div>
+<h3 data-content-sub-title="Раскрыт механизм действия атропина? Влияние атропина и оптического дефокуса на толщину слоев хориоидеи у детей
+с прогрессирующей миопией" class="typography-h2 mt-0 text-color-primary mb-4 pb-5">
+    Раскрыт механизм действия атропина? Влияние атропина и оптического дефокуса на толщину слоев хориоидеи у детей
+    с прогрессирующей миопией </h3>
+
+<div class="mb-4 pb-5 flex-block">
+    <div class="flex-item" style="max-width: 432px">
+        <div class="pb-3 mb-3">
+            <b>Цель</b>
+        </div>
+        <div>
+            Глазные капли атропина используются во всем мире для контроля прогрессирования детской близорукости, но механизм действия атропина неясен. В исследовании были проанализированы изменения в изображениях оптической когерентной томографии (ОКТ), полученных от детей до и после лечения атропином, изучалось действие атропина и оптического дефокуса на разные слои хориоидеи.
+        </div>
+    </div>
+    <div class="flex-item" style="max-width: 385px">
+        <div class="pb-3 mb-3">
+            <b>Методология</b>
+        </div>
+        <div>
+            Анализ изображения оптической когерентной томографии (ОКТ) 20 детей (6-14 лет), которые получали 60 минут монокулярной оптической дефокусировки ±2,00D до и после 1 недели ночного применения 0,3% глазных капель атропина. Слои (мембрана Бруха, слой хориокапилляров, слой сосудов среднего калибра – слой Саттлера, слой сосудов крупного калибра – слой Галлера, супрахориоидея) были сегментированы и измерены с помощью специальной программы. Анализировалось действие только атропина, только оптического дефокуса и комбинации атропина и дефокуса.
+        </div>
+    </div>
+</div>
+
+
+<div class="pb-3 mb-3 fs20">
+    <b>Результаты</b>
+</div>
+<div class="mb-4 pb-5 ">
+    Применение только атропина вызывало утолщение слоя Галлера и хориоидеи в целом (p=0,0001). Воздействие только гиперметропического дефокуса вызывало истончение слоя Галлера и хориоидеи в целом (p=0,00001).  При одновременном воздействии атропина и гиперметропического дефокуса такой корреляции не наблюдалось.
+</div>
+
+<div class="pb-4 mb-3 fs20"></div>
+<div class="pb-3 mb-3 fs20">
+    <b>Выводы</b>
+</div>
+<div class="pb-6 mb-6 ">
+    Результаты показывают, что атропин увеличивает толщину слоя Галлера в хороидее, являясь антагонистом действию гиперметропического дефокуса.
+</div>
+
+
+<h2 class="numbered-title mb-4 pb-5" data-content-parent-title="02.ЗАБОЛЕВАНИЯ ГЛАЗ" style="word-break: break-word;">
+    <span>01</span> ЗАБОЛЕВАНИЯ <br> ГЛАЗ</h2>
+<h3 data-content-sub-title="Какие системные препараты влияют на ССГ" class="typography-h2 mt-0 text-color-primary mb-4 pb-5">
+    Какие системные препараты влияют на ССГ </h3>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Цель</b>
+</div>
+<div class="mb-4 pb-5 ">
+    Как системные препараты могут влиять на субъективные симптомы и клинические признаки ССГ? Проведен анализ взаимосвязи выраженности ССГ и приема различных системных препаратов на основе базы данных Dry Eye Assessment and Management (DREAM) — большого многоцентрового рандомизированного плацебо-контролируемого клинического исследования пациентов с ССГ средней и тяжелой степени.
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Методы</b>
+</div>
+<div class="pb-3 mb-3 ">
+    535 пациентов с ССГ средней и тяжелой степени, принимающих системные препараты, обследованы при первичном приеме, через 6 и 12 месяцев.
+</div>
+<div class="pb-3 mb-3 ">
+    Симптомы ССГ оценивались с помощью индекса заболеваний глазной поверхности (OSDI).
+</div>
+<div class="pb-3 mb-3 ">
+    Тесты на клинические признаки ССГ включали:
+</div>
+<ul class="detail-material-list pb-3 mb-3">
+    <li>Время разрыва слезной пленки (ВРСП),</li>
+    <li>Тест Ширмера,</li>
+    <li>Окрашивание роговицы флюоресцеином,</li>
+    <li>Окрашивание конъюнктивы лиссаминовым зеленым,</li>
+    <li>Оценку мейбомиевых желез,</li>
+    <li>Осмолярность слезы.</li>
+</ul>
+<div class="pb-3 mb-3 ">
+    Системные препараты включали следующие классы:
+</div>
+<ul class="detail-material-list pb-3 mb-3">
+    <li>Статины,</li>
+    <li>Ингибиторы протонной помпы (ИПП),</li>
+    <li>Аспирин,</li>
+    <li>Витамин D3,</li>
+    <li>Нестероидные противовоспалительные средства (НПВС),</li>
+    <li>Кортикостероиды,</li>
+    <li>Диуретики,</li>
+    <li>Препараты для лечения гипотиреоза,</li>
+    <li>Гипогликемические,</li>
+    <li>Гипотензивные,</li>
+    <li>Противосудорожные,</li>
+    <li>Препараты для лечения мигрени.</li>
+</ul>
+<div class="pb-3 mb-3 ">
+    Сравнивали выраженность признаков ССГ среди пациентов, принимающих и не принимающих препараты каждой группы
+</div>
+<div class="row">
+    <div class="col-12">
+        <div class="detail-material-responsive pb-4 mb-4">
+            <div style="width: 920px;">
+                <span>  <img alt="Сравнивали выраженность признаков ССГ среди пациентов, принимающих и не принимающих препараты каждой группы" src="https://email-images.mindbox.ru/MoiGlaza/989/360af5f7-1656-4df1-8913-af35c7ce07c2.png" class="d-block w-100 mw-100 h-auto" loading="lazy"> </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mb-4 pb-5 ">
+    Никакие системные препараты не влияли на выраженность субъективных симптомов ССГ.
+</div>
+<div class="pb-4 mb-3 fs20"></div>
+<div class="pb-3 mb-3 fs20">
+    <b>Выводы</b>
+</div>
+<ul class="detail-material-list pb-5 mb-5">
+    <li>Аспирин, кортикостероиды, витамин D3, препараты от судорог и мигрени увеличивают выраженность клинических признаков ССГ, а диуретики улучшают состояние мейбомиевых желез.</li>
+    <li>Использование нескольких системных препаратов увеличивает риск развития более тяжелого ССГ.</li>
+    <li>Системные препараты не влияют на выраженность субъективной симптоматики ССГ</li>
+</ul>
+
+<h3 data-content-sub-title="Возраст наступления менопаузы влияет на риск глаукомы" class="typography-h2 mt-0 text-color-primary mb-4 pb-5">
+    Возраст наступления менопаузы влияет на риск глаукомы</h3>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Цель</b>
+</div>
+<div class="mb-4 pb-5 ">
+    Женщины составляют почти 60% населения, страдающего глаукомой. Недавние исследования показали, что возраст наступления менопаузы влияет на риск развития глаукомы. Существует гипотеза, что эстроген может оказывать защитное действие на зрительный нерв, в то время как снижение уровня эстрогена увеличивает вероятность развития глаукомной оптиконейропатии. Исследователи из Атланты, США, провели ретроспективное исследование, чтобы изучить связь между возрастом менопаузы и сроком манифестации глаукомы.
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Методы</b>
+</div>
+<div class="pb-3 mb-3 ">
+    В исследование были включены пациентки женского пола без заболеваний глаз до наступления менопаузы, не принимающие заместительную гормональную терапию. Чтобы оценить связь возраста наступления менопаузы с временем возникновения глаукомы, выделили две группы пациенток:
+</div>
+<ul class="detail-material-list pb-3 mb-3">
+    <li>С ранней менопаузой (n=221, возраст от 35 до 45 лет) — сравнивали с контрольной группой с средней менопаузой (n=663, от 45 до 55 лет).</li>
+    <li>С поздней менопаузой (n=488, от 55 до 65) — сравнивали с контрольной группой с средней менопаузой (n=488, от 45 до 55).</li>
+</ul>
+<div class="mb-4 pb-5 ">
+    В ходе анализа учитывались следующие ковариаты: раса и этническая принадлежность, ИМТ, артериальное давление, применение системных антигипертензивных препаратов и индекс сопутствующей патологии.
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Результаты</b>
+</div>
+<div class="pb-3 mb-3 ">
+    В обеих группах возраст наступления менопаузы был самым сильным предиктором срока манифестации глаукомы.
+</div>
+<ul class="detail-material-list mb-4 pb-5">
+    <li>У пациенток в группе ранней менопаузы глаукома развивалась в среднем на 5,5 лет раньше, чем у контрольной группы.</li>
+    <li>У женщин из группы поздней менопаузы глаукома развивалась в среднем на 5,3 года позже, чем у контрольной группы.</li>
+    <li>На каждый год более позднего наступления менопаузы задержка в развитии глаукомы составила 0,67 года и 0,68 года для популяций раннего и позднего контроля, соответственно.</li>
+</ul>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Выводы</b>
+</div>
+<div class="pb-5 mb-5 ">
+    Выявлена связь между возрастом наступления менопаузы и временем появления глаукомы. У женщин с ранней менопаузой раньше развивается глаукома, что имеет важное значение для прогноза по зрению в долгосрочном периоде. В дальнейшем необходимо изучить влияние менопаузы на заболеваемость глаукомой, а также влияние ЗГТ на риск глаукомы.
+</div>
+<h3 data-content-sub-title="Жирная кожа повышает риск ССГ" class="typography-h2 mt-0 text-color-primary mb-4 pb-5">
+    Жирная кожа повышает риск ССГ </h3>
+<div class="mb-4 pb-5  ">
+    Липиды кожи разрушают слезную пленку, и частый контакт с ними глазной поверхности приводит к развитию синдрома сухого глаза (ССГ).
+</div>
+
+<div class="mb-4 pb-5  flex-block">
+    <div class="flex-item" style="max-width: 432px">
+        <div class="pb-3 mb-3">
+            <b>Цель</b>
+        </div>
+        <div>
+            Исследования показывают, что наличие жирной кожи увеличивает риск ССГ: жирные кислоты и низкий рН липидов кожи (ЛК) способствуют разрушению слезной пленки, что приводит к возникновению симптомов ССГ. Предложена гипотеза, что липиды мейбомиевых желез (ЛМЖ) образуют барьер, который предотвращает попадание ЛК в глаз и последующую дестабилизацию слезной пленки (СП). В Сиднее, Австралия, проведено экспериментальное исследование in vivo, демонстрирующее это взаимодействие
+        </div>
+    </div>
+    <div class="flex-item" style="max-width: 358px">
+        <div class="pb-3 mb-3">
+            <b>Методология</b>
+        </div>
+        <div>
+            С боковой стороны носа каждого участника брали мазок с поверхности кожи, далее проводили аппликацию полученного секрета (себума) на роговицу, край века, у основания ресниц или в области слезного озера. Контроль — аппликация образцов с низким рН (уксусная кислота), с нейтральными липидами и со свободными жирными кислотами (аналогичны кожным липидам)
+            <br><br>
+            Воздействие на СП визуализировалось с помощью окрашивания флюоресцеином или TearView — прибора, показывающего образование и стабильность слезной пленки в режиме реального времени.
+        </div>
+    </div>
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Результаты</b>
+</div>
+<div class="mb-4 pb-5  ">
+    Как TearView, так и окрашивание флуоресцеином показали, что минимальное количество кожного себума, нанесенное на поверхность роговицы, край века или область слезного озера, но не у основания ресниц, вызывало значительное нарушение целостности СП (она не восстанавливалась в течение нескольких морганий), прокрашивание роговицы, а также субъективные симптомы — боль. Исследование на приборе TearView показало, что контакт с кожным себумом вызывал также секрецию ЛМЖ, которые вытесняли ЛК, обеспечивая защиту глазной поверхности. 5%-ный водный раствор уксусной кислоты, имитирующий рН кожи, вызывал локальное, а не распространенное нарушение СП и окрашивание роговицы (только в месте аппликации), при этом после однократного моргания происходило восстановление СП. Нейтральные контрольные липиды не вызывали никакого дискомфорта и не разрушали СП, “размазывались” по СП при моргании. В отличие от них, свободные жирные кислоты, типичные компоненты ЛК, оказывали на СП действие, сходное с кожным себумом, — вызывали боль и длительное прокрашивание роговицы.
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Выводы</b>
+</div>
+<div class="pb-5 mb-5 ">
+    Контакт глазной поверхности с секретом кожи дестабилизирует СП, вызывает боль, окрашивание роговицы флюоресцеином, а также повышение активности мейбомиевых желез — предположительно как физиологический ответ для усиления защиты от ЛК. Нарушение СП, вероятно, связано с воздействием жирных кислот и низкого pH. Секреция мейбума вдоль края век выполняет барьерную функцию. Этот барьер может быть нарушен при снижении секреции ЛМЖ или при избытке секреции ЛК. Загрязнение глазной поверхности ЛК может быть причиной развития ССГ при различных типах блефарита, офтальморозацеа и ДМЖ.
+</div>
+<h3 data-content-sub-title="ССГ — побочный эффект терапии рака молочной железы" class="typography-h2 mt-0 text-color-primary mb-4 pb-5 ">
+    ССГ — побочный эффект терапии рака молочной железы </h3>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Цель</b>
+</div>
+<div class="mb-4 pb-5  ">
+    Побочные эффекты, такие как усталость, боль и скованность в суставах, часто встречаются при эндокринной терапии рака молочной железы (РМЖ). Также на фоне лечения может развиваться синдром сухого глаза (ССГ). Проведено перекрестное обсервационное исследование для анализа частоты ССГ, его клинических подтипов и факторов риска у пациенток с РМЖ, получающих эндокринную терапию: селективные модуляторы эстрогеновых рецепторов (СМЭР) и ингибиторы ароматазы (ИА).
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Методы</b>
+</div>
+<div class="mb-4 pb-5  ">
+    Исследование включало 88 женщин — 56 получали терапию ИА, и 32 проходили лечение СМЭР. Учитывались возраст, ИМТ, особенности течения основного заболевания и симптомы ССГ (анкета OSDI). Для определения состояния глазной поверхности и определения признаков ССГ применяли комплексный детектор поверхности глаза (Comprehensive Eye Surface Detector). Оценку тревожности и депрессии пациентов проводили по шкале самооценки тревожности (Self-Rating Anxiety Scale — SAS) и шкале тревожности Гамильтона (Hamilton Anxiety Scale — HAMA). Также исследовали содержание в крови липидов и половых гормонов. Статистическими методами определяли частоту возникновения ССГ и его клинических подтипов, а также факторы риска.
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Результаты</b>
+</div>
+<div class="pb-3 mb-3 ">
+    1. ССГ выявлен у 77 из 88 пациенток с РМЖ (87,50%). Из 77 пациенток с ССГ 10 женщин получали лечение СМЭР (11,36%), а 67 принимали ИА (76,14%). Частота клинических подтипов сухого глаза была следующей: ССГ с повышением испарения обнаружен у 46 пациенток (59,74%), ССГ с дефицитом липидного компонента — у 18 (23,38%), смешанный ССГ — у 13 (16,88%).
+</div>
+<div class="pb-3 mb-3 ">
+    2. Среди пациентов с ССГ, получавших лечение ИА, у пациентов моложе 50 лет субъективные симптомы и клинические признаки ССГ были значительно более выраженными, чем у пациентов старше 50 лет.
+</div>
+<div class="pb-3 mb-3 ">
+    3. Все пациенты с РМЖ имели различную степень тревоги и депрессии, но выраженность этих симптомов была значительно выше у пациентов с ССГ. Наблюдалась взаимосвязь: чем тяжелее ССГ, тем интенсивнее тревога и депрессия.
+</div>
+<div class="mb-4 pb-5  ">
+    4. У пациенток с РМЖ, получающих ИА и СМЭР, только возраст был значительно связан с ССГ. Не выявлено связи ССГ с другими факторами: возрастом, ИМТ, липидным профилем, уровнем половых гормонов.
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Выводы</b>
+</div>
+<div class="pb-5 mb-5 ">
+    ССГ выявлен у 9 из 10 пациенток с РМЖ, получающих эндокринную терапию (ИА и СМЭР). Профилактика ССГ на начальном этапе лечения может значительно улучшить качество жизни пациенток с РМЖ
+</div>
+<h3 data-content-sub-title="ChatGPT сдает экзамен по офтальмологии" class="typography-h2 mt-0 text-color-primary mb-4 pb-5 ">
+    ChatGPT сдает экзамен по офтальмологии </h3>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Цель</b>
+</div>
+<div class="mb-4 pb-5  ">
+    ChatGPT - это чат-бот с искусственным интеллектом, который имеет огромные перспективы во многих сферах, в том числе в медицинском образовании. Как ChatGPT справляется с тестом для сертификации в офтальмологии?
+</div>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Методы</b>
+</div>
+<div class="mb-4 pb-5  ">
+    В этом кросс-секционном исследовании использовалась 125 текстовых вопросов с несколькими вариантами ответов, из банка практических вопросов для подготовки к сертификационному экзамену по офтальмологии в Канаде (OphthoQuestions).
+</div>
+
+
+<div class="pb-3 mb-3 fs20">
+    <b>Оценивались</b>
+</div>
+<ul class="detail-material-list mb-4 pb-5 ">
+    <li>Количество вопросов, на которые ChatGPT ответил правильно,</li>
+    <li>Доля вопросов, на которые ChatGPT предоставил дополнительные объяснения, средняя длина вопросов и ответов, предоставленных ChatGPT,</li>
+    <li>Эффективность ChatGPT при ответах на вопросы без вариантов с множественным выбором,</li>
+    <li>Изменения в результатах с течением времени (тестирование проводилось дважды: с 9 по 16 января 2023 года и 17 февраля 2023 года).</li>
+</ul>
+
+
+<div class="pb-3 mb-3 fs20">
+    <b>Результаты</b>
+</div>
+<ul class="detail-material-list mb-4 pb-5 ">
+    <li>В январе 2023 года ChatGPT правильно ответил на 58 из 125 вопросов (46%).</li>
+    <li>Наилучшие результаты — в категории "Общая медицина" (11/14; 79%), наихудшие — в категории "Сетчатка и стекловидное тело" (0%).</li>
+    <li>Доля вопросов, на которые ChatGPT предоставил дополнительные объяснения, была одинаковой между вопросами, на которые он ответил правильно и неправильно. Средняя длина как вопросов, так и ответов была одинаковой между правильно и неправильно отвеченными. В 44% случаев ChatGPT выбирал тот же ответ, который чаще всего указывали и ординаторы-офтальмологи, а в 11% случаев — наименее популярный ответ.</li>
+    <li>ИВ феврале 2023 года ChatGPT дал правильный ответ уже на 58% вопросов с множественным выбором (73 из 125) и на 54% вопросов (42 из 78) без вариантов выбора</li>
+</ul>
+
+<div class="pb-3 mb-3 fs20">
+    <b>Выводы</b>
+</div>
+<div class="pb-4 mb-3 ">
+    ChatGPT набрал почти 50% баллов на практическом экзамене по офтальмологии в Канаде, а при повторном тесте через месяц — более чем на 10% баллов больше. ChatGPT наиболее точно справился с вопросами по общей медицине, ответив правильно на 79% из них, но точность по офтальмологическим субспециализациям была значительно ниже (20% вопросов по окулопластике и 0% - по ретинологии). Таким образом, в настоящее время ChatGPT не отвечает на достаточное количество вопросов, чтобы оказать существенную помощь в подготовке к сертификации по офтальмологии, но ChatGPT, как нейросеть, может учиться, поэтому точность ответов улучшится в будущем.
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- b3 // -->
+<div class="detail-material__banner" data-banner="horizontal2">
+</div>
+<br>
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,28 @@
+
+
+<span style="overflow:hidden; display: inline;background-image: url(&quot;https://email-images.mindbox.ru/MoiGlaza/797/cb3b705c-132e-47e2-9be9-7d3a1cdd3c66.png&quot;); background-size: contain;background-repeat: no-repeat;background-position: 100% 115%;">1000 рублей</span>
+<sup style="line-height: 1;"><small style="line-height: 1;">1</small></sup>
+https://email-images.mindbox.ru/MoiGlaza/823/661146c3-2a47-4d9a-bc75-c378c203fcb9.png
+https://email-images.mindbox.ru/MoiGlaza/788/18dbe831-4b46-4579-a9e1-4c8fa9fe6cd2.png
+https://email-images.mindbox.ru/MoiGlaza/828/ea30f83a-d54c-474f-9594-a605496706fe.png
+https://email-images.mindbox.ru/MoiGlaza/828/18cd982e-74c6-4ec4-8f5b-3159161b1dee.png
+https://email-images.mindbox.ru/MoiGlaza/788/18dbe831-4b46-4579-a9e1-4c8fa9fe6cd2.png
+https://email-images.mindbox.ru/MoiGlaza/862/16270d55-5ede-43f2-a98d-d0e91db8dcc7.png
+https://email-images.mindbox.ru/MoiGlaza/874/4c728042-284f-420e-9d5b-5d39a9aa0c18.png
+https://email-images.mindbox.ru/MoiGlaza/898/78fdd9ee-c068-4031-810c-cdfb778ffb49.png
+?user_id=${Recipient.AdditionalData.userwebsiteid}&pin=${Recipient.Id}
+
+
+
+
+
+
+
+
+
+@{if not isEmpty(ord.add)}
+Аддидация: <span style="font-weight: 700;">${ord.add}</span> <br>
+@{end if}
+@{if not isEmpty(ord.Diop)}
+
+
